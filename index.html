@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DANNY TECH MARKETING</title>
+    <style>
+        body {
+            background-image: url('/mnt/data/website_background_image.jpg');
+            background-size: cover;
+            background-position: center;
+            font-family: Arial, sans-serif;
+        }
+        header {
+            background-color: yellow;
+            text-transform: uppercase;
+            text-align: center;
+            padding: 20px 0;
+            margin-bottom: 20px;
+        }
+        footer {
+            background-color: green;
+            text-transform: uppercase;
+            text-align: center;
+            padding: 20px 0;
+        }
+        .container {
+            width: 80%;
+            margin: 0 auto;
+        }
+        h1, h2 {
+            font-size: 2rem;
+        }
+        p {
+            font-size: 1.2rem;
+        }
+        nav ul {
+            list-style: none;
+            padding: 0;
+        }
+        nav ul li {
+            display: inline;
+            margin-right: 20px;
+        }
+        .social-icons {
+            list-style: none;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+        }
+        .social-icons li {
+            margin-right: 10px;
+        }
+        .social-icons li:last-child {
+            margin-right: 0;
+        }
+    </style>
+
+    <!-- Security Scripting -->
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' https://trusted-scripts.com; style-src 'self' https://trusted-styles.com;">
+    <meta http-equiv="X-Frame-Options" content="DENY">
+    <meta http-equiv="Strict-Transport-Security" content="max-age=31536000; includeSubDomains; preload">
+    <meta http-equiv="X-XSS-Protection" content="1; mode=block">
+    <meta http-equiv="X-Content-Type-Options" content="nosniff">
+    <meta name="referrer" content="strict-origin">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>DANNY TECH MARKETING</h1>
+            <nav>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <li><a href="https://dannyproworldwide.blogspot.com">Blog</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <li>OUR SERVICES ARE AVAILABLE FOR HIRING </li>
+        <div class="container">
+            <section id="about">
+                <h2>About Us</h2>
+                <p>Welcome to Danny Tech Marketing, your premier destination for innovative marketing solutions in the ever-evolving world of technology.</p>
+            </section>
+            <section id="services">
+                <h2>Our Services</h2>
+                <ul>
+                    <li>Website Development  (for your business, personal, school, hospital blog, etc.)</li>
+                    <li>Learning programming skills acquisition (Java, C++, Python, etc.)</li>
+                    <li>Learn graphic designs</li>
+                    <li>Get Foreign Bank Account (dollar, euro, pounds)</li>
+                    <li>Computer System Complications and Fixing (configuration, installation, and updating)</li>
+                    <li>Sales of Tested and Trusted Laptops and Desktops</li>
+                    <li>Social Media and Google Account Management/Account Recovery</li>
+                    <li>Get Personal Android Applications to Facilitate Your Business (Android app and iOS app)</li>
+                </ul>
+            </section>
+            <section id="contact">
+                <h2>Contact Us</h2>
+                <p>Email: <a href="mailto:clientsmailbox247@gmail.com">clientsmailbox247@gmail.com</a></p>
+                <p>Phone Number: 09035423458</p>
+                <p>Facebook Page: <a href="https://www.facebook.com/profile.php?id=100064056152447">Facebook</a></p>
+            </section>
+            <section id="terms_and_conditions">
+                <h2>Terms and Conditions</h2>
+                <p>Welcome to [Danny Tech Marketing]! These terms and conditions outline the rules and regulations for the use of our website.
+
+                By accessing this website, we assume you accept these terms and conditions. Do not continue to use [ Danny Tech Marketing] if you do not agree to all of the terms and conditions stated on this page.</p>
+                <button id="agreeButton" onclick="agree()">Agree</button>
+                <button id="disagreeButton" onclick="disagree()">Disagree</button>
+                <p>...</p>
+            </section>
+        </div>
+    </main>
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 DANNY TECH MARKETING</p>
+        </div>
+    </footer>
+    <script>
+        function agree() {
+            // Handle user agreement action
+            alert("You have agreed to the terms and conditions.");
+        }
+
+        function disagree() {
+            // Handle user disagreement action
+            alert("You have disagreed to the terms and conditions.");
+        }
+    </script>
+</body>
+</html>
