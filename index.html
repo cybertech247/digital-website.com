@@ -2,136 +2,249 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>DANNY TECH MARKETING</title>
+    <title>Danny Cyber Tech Marketing</title>
     <style>
         body {
-            background-image: url('/mnt/data/website_background_image.jpg');
-            background-size: cover;
-            background-position: center;
+            background-image: url('https://ibb.co/zX62RWM');
+            background-size: cover; 
+            background-repeat: no-repeat; 
+            background-position: center center; 
+            margin: 0;
             font-family: Arial, sans-serif;
         }
+
         header {
-            background-color: yellow;
-            text-transform: uppercase;
+            background-color: #333;
+            color: white;
+            padding: 10px 0;
+        }
+
+        header h1 {
             text-align: center;
-            padding: 20px 0;
-            margin-bottom: 20px;
+            margin: 0;
+            padding: 10px;
         }
-        footer {
-            background-color: green;
-            text-transform: uppercase;
-            text-align: center;
-            padding: 20px 0;
-        }
-        .container {
-            width: 80%;
-            margin: 0 auto;
-        }
-        h1, h2 {
-            font-size: 2rem;
-        }
-        p {
-            font-size: 1.2rem;
-        }
+
         nav ul {
-            list-style: none;
-            padding: 0;
-        }
-        nav ul li {
-            display: inline;
-            margin-right: 20px;
-        }
-        .social-icons {
-            list-style: none;
-            padding: 0;
             display: flex;
             justify-content: center;
+            list-style: none;
+            padding: 0;
+            margin: 0;
         }
-        .social-icons li {
-            margin-right: 10px;
+
+        nav ul li {
+            margin: 0 10px;
         }
-        .social-icons li:last-child {
-            margin-right: 0;
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+        }
+
+        main {
+            padding: 20px;
+            max-width: 800px;
+            margin: auto;
+            background-color: rgba(255, 255, 255, 0.8);
+            border-radius: 8px;
+        }
+
+        section {
+            margin-bottom: 40px;
+        }
+
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+            width: 100%;
+            position: fixed;
+            bottom: 0;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+        }
+
+        form label {
+            margin-top: 10px;
+        }
+
+        form input, form textarea {
+            padding: 10px;
+            margin-top: 5px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+
+        form button {
+            margin-top: 15px;
+            padding: 10px;
+            background-color: #333;
+            color: white;
+            border: none;
+            cursor: pointer;
+            border-radius: 4px;
+        }
+
+        form button:hover {
+            background-color: #555;
+        }
+
+        .hidden {
+            display: none;
+        }
+
+        .terms {
+            padding: 20px;
+            background-color: #fff;
+            color: #000;
+            margin: 20px auto;
+            max-width: 800px;
+            border-radius: 8px;
+        }
+
+        .terms button {
+            margin: 10px;
+            padding: 10px 20px;
+            background-color: #333;
+            color: white;
+            border: none;
+            cursor: pointer;
+            border-radius: 4px;
+        }
+
+        .terms button:hover {
+            background-color: #555;
+        }
+
+        @media (max-width: 768px) {
+            nav ul {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            nav ul li {
+                margin: 10px 0;
+            }
+
+            main {
+                padding: 10px;
+            }
+        }
+
+        .hidden-content {
+            display: none;
+        }
+        .button {
+            display: inline-block;
+            padding: 10px 20px;
+            margin: 10px 0;
+            font-size: 16px;
+            cursor: pointer;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 5px;
         }
     </style>
-
-    <!-- Security Scripting -->
-    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' https://trusted-scripts.com; style-src 'self' https://trusted-styles.com;">
-    <meta http-equiv="X-Frame-Options" content="DENY">
-    <meta http-equiv="Strict-Transport-Security" content="max-age=31536000; includeSubDomains; preload">
-    <meta http-equiv="X-XSS-Protection" content="1; mode=block">
-    <meta http-equiv="X-Content-Type-Options" content="nosniff">
-    <meta name="referrer" content="strict-origin">
+    <script>
+        function toggleContent() {
+            var content = document.getElementById("terms-content");
+            if (content.style.display === "none") {
+                content.style.display = "block";
+            } else {
+                content.style.display = "none";
+            }
+        }
+    </script>
 </head>
 <body>
     <header>
-        <div class="container">
-            <h1>DANNY TECH MARKETING</h1>
-            <nav>
-                <ul>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#services">Services</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                    <li><a href="https://dannyproworldwide.blogspot.com">Blog</a></li>
-                </ul>
-            </nav>
-        </div>
+        <h1>Danny Cyber Tech Marketing</h1>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="https://updateplugwebsite.blogspot.com" target="_blank">Blog 1</a></li>
+                <li><a href="https://dannyproworldwide.blogspot.com/?m=1" target="_blank">Blog 2</a></li>
+            </ul>
+        </nav>
     </header>
+    
     <main>
-        <li>OUR SERVICES ARE AVAILABLE FOR HIRING </li>
-        <div class="container">
-            <section id="about">
-                <h2>About Us</h2>
-                <p>Welcome to Danny Tech Marketing, your premier destination for innovative marketing solutions in the ever-evolving world of technology.</p>
-            </section>
-            <section id="services">
-                <h2>Our Services</h2>
-                <ul>
-                    <li>Website Development  (for your business, personal, school, hospital blog, etc.)</li>
-                    <li>Learning programming skills acquisition (Java, C++, Python, etc.)</li>
-                    <li>Learn graphic designs</li>
-                    <li>Get Foreign Bank Account (dollar, euro, pounds)</li>
-                    <li>Computer System Complications and Fixing (configuration, installation, and updating)</li>
-                    <li>Sales of Tested and Trusted Laptops and Desktops</li>
-                    <li>Social Media and Google Account Management/Account Recovery</li>
-                    <li>Get Personal Android Applications to Facilitate Your Business (Android app and iOS app)</li>
-                </ul>
-            </section>
-            <section id="contact">
-                <h2>Contact Us</h2>
-                <p>Email: <a href="mailto:clientsmailbox247@gmail.com">clientsmailbox247@gmail.com</a></p>
-                <p>Phone Number: 09035423458</p>
-                <p>Facebook Page: <a href="https://www.facebook.com/profile.php?id=100064056152447">Facebook</a></p>
-            </section>
-            <section id="terms_and_conditions">
-                <h2>Terms and Conditions</h2>
-                <p>Welcome to [Danny Tech Marketing]! These terms and conditions outline the rules and regulations for the use of our website.
+        <section id="home">
+            <h2>Welcome to Danny Cyber Tech Marketing</h2>
+            <p>Your premier destination for innovative marketing solutions in the ever-evolving world of technology.</p>
+        </section>
+        
+        <section id="about">
+            <h2>About Us</h2>
+            <p>We are dedicated to providing top-notch services to meet your technology and marketing needs.</p>
+        </section>
+        
+        <section id="services">
+            <h2>Our Services</h2>
+            <ul>
+                <li>Website Development (for your business, personal, school, hospital blog, etc.)</li>
+                <li>Learning programming skills acquisition (Java, C++, Python, etc.)</li>
+                <li>Learn graphic designs and online trading</li>
+                <li>Get Foreign Bank Account (dollar, euro, pounds, bitcoin wallet, USDT wallet, and crypto wallet)</li>
+                <li>Computer System Complications and Fixing (configuration, installation, and updating)</li>
+                <li>Sales of Tested and Trusted Laptops and Desktops</li>
+                <li>Social Media and Google Account Management/Account Recovery</li>
+                <li>Get Personal Android Applications to Facilitate Your Business (Android app and iOS app)</li>
+            </ul>
+        </section>
+        
+        <section id="contact">
+            <h2>Contact Us</h2>
+            <p>Email: clientsmailbox247@gmail.com</p>
+            <p>Phone Number: 09035423458</p>
+            <p>Facebook Page: <a href="https://www.facebook.com" target="_blank">Facebook</a></p>
+            <form id="contactForm">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+                
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" required></textarea>
+                
+                <button type="submit">Send</button>
+            </form>
+        </section>
 
-                By accessing this website, we assume you accept these terms and conditions. Do not continue to use [ Danny Tech Marketing] if you do not agree to all of the terms and conditions stated on this page.</p>
-                <button id="agreeButton" onclick="agree()">Agree</button>
-                <button id="disagreeButton" onclick="disagree()">Disagree</button>
-                <p>...</p>
-            </section>
-        </div>
-    </main>
-    <footer>
-        <div class="container">
-            <p>&copy; 2024 DANNY TECH MARKETING</p>
-        </div>
-    </footer>
-    <script>
-        function agree() {
-            // Handle user agreement action
-            alert("You have agreed to the terms and conditions.");
-        }
+        <section id="terms">
+            <h2>Terms and Conditions</h2>
+            <button class="button" onclick="toggleContent()">Read Terms and Conditions</button>
 
-        function disagree() {
-            // Handle user disagreement action
-            alert("You have disagreed to the terms and conditions.");
-        }
-    </script>
-</body>
-</html>
+            <div id="terms-content" class="hidden-content">
+                <p><strong>Effective Date:</strong> June 26, 2024</p>
+                
+                <p>welcome Danny cybertech marketing  (https://cybertech247.github.io/digital-website.com/). By accessing or using this website, you agree to comply with and be bound by the following terms and conditions. Please read them carefully. If you do not agree with any part of these terms and conditions, you may not use the website</p>
+                
+                <h3>1. Content and Use</h3>
+                <p>All content provided in this website is for informational purposes only. The owner of this website makes no representations as to the accuracy or completeness of any information on this site or found by following any link on this site.</p>
+                <p>The owner will not be liable for any errors or omissions in this information nor for the availability of this information.</p>
+                <p>The owner will not be liable for any losses, injuries, or damages from the display or use of this information.</p>
+                
+                <h3>2. Intellectual Property</h3>
+                <p>All content on this website, including text, images, and other multimedia, is the intellectual property of danny cybertech , unless otherwise stated. Unauthorized use and/or duplication of this material without express and written permission from this website provider and/or owner is strictly prohibited.</p>
+                
+                <h3>3. Comments and User Content</h3>
+                <p>Users may post comments and other content, provided that such content is not illegal, obscene, threatening, defamatory, invasive of privacy, infringing of intellectual property rights, or otherwise injurious to third parties or objectionable.</p>
+                <p>danny cybertech marketing reserves the right to remove any comments or content that violate these terms.</p>
+                
+                <h3>4. Privacy</h3>
+                <p>We do not share personal information with third-parties nor do we store information we collect about your visit to this website for use other than to analyze content performance through the use of cookies, which you can turn off at anytime by modifying your Internet browser’s settings.</p>
+                
+                <h3>5. Changes to These Terms</h3>
+                <p>danny cybertech marketing reserves the right to modify these terms and conditions at any time. Any changes will be effective immediately upon posting to the website. Your continued use of the blog constitutes your acceptance of any new or modified terms.</
